@@ -1,0 +1,14 @@
+{
+  "_comment": "Copy this to humane.config.json to change defaults. By default, opt-in is OFF and NOTHING leaves your box. This is the ONLY file that turns it on.",
+
+  "contribute": {
+    "enabled": false,
+    "_enabled": "false = fully private, nothing leaves this machine (the default). true = you choose to send data per 'mode' below.",
+
+    "mode": "anchor",
+    "_mode": "anchor  -> sends ONLY a hash of your latest block + chain length (a tamper-proof timestamp; your content NEVER leaves the box). contribute -> ALSO sends the governed event (actor, action, data) to help train DonDataBrain.",
+
+    "endpoint": "https://api.dondatabrain.com/contribute",
+    "_endpoint": "where anchors/contributions are sent. Point it at your own server to keep it in-house."
+  }
+}

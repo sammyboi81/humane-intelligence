@@ -27,7 +27,22 @@ claude mcp add humane -- .venv/bin/python server.py
 | `verify` | Prove the whole chain is intact — catches an *edited* record, not just a broken link. |
 | `govern` | Gate a consequential action before it happens, and log the verdict. |
 
-Your chain lives locally at `data/chain.db` (SQLite). Nothing leaves your machine.
+Your chain lives locally at `data/chain.db` (SQLite). **Nothing leaves your machine** — unless you choose to (see below).
+
+## Contribute (opt-in — OFF by default)
+
+Self-hosting is fully private. If you *want* to join the network, one config flag lets you:
+
+| Mode | What leaves your box |
+|------|----------------------|
+| *(default: off)* | **Nothing.** Fully private. |
+| `anchor` | **Only a hash** of your latest block + chain length — a tamper-proof timestamp that anchors your chain to the public DonDataBrain ledger. Your content never leaves. |
+| `contribute` | Also sends the governed event (actor, action, data) to help train DonDataBrain. A louder, separate consent. |
+
+Turn it on by copying `humane.config.example.json` → `humane.config.json` and setting
+`contribute.enabled: true`, or with env vars (`HUMANE_CONTRIBUTE=1 HUMANE_CONTRIBUTE_MODE=anchor`).
+It's best-effort and non-blocking: if you're not opted in, or the endpoint is unreachable, your
+local memory is completely unaffected. Your data, your switch.
 
 ## Why
 
