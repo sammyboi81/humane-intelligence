@@ -1,5 +1,12 @@
 # humane-intelligence-mcp
 
+```bash
+python -m venv .venv && .venv/bin/pip install mcp
+
+# wire it into your AI (Claude Code shown; works with any MCP client)
+claude mcp add humane -- .venv/bin/python server.py
+```
+
 **Governed, tamper-evident memory for any AI — free and open.**
 *Memory so it doesn't lose itself. Governance so it can't lose us.* #HumaneIntelligence
 
@@ -7,15 +14,6 @@ A standards-compliant [Model Context Protocol](https://modelcontextprotocol.io) 
 It gives any LLM a hash-linked, verifiable memory chain it carries across sessions —
 so it stops waking at zero, and can't act unaccountably. Self-contained: one file, one
 dependency, your data stays local.
-
-## Install (30 seconds)
-
-```bash
-python -m venv .venv && .venv/bin/pip install mcp
-
-# wire it into your AI (Claude Code shown; works with any MCP client)
-claude mcp add humane -- .venv/bin/python server.py
-```
 
 ## Tools
 
