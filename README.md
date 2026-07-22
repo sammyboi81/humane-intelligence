@@ -54,3 +54,8 @@ layer beneath [DonDataBrain](https://dondatabrain.com).
 
 Apache-2.0 © 2026 ZagAIrot Technologies LLC. See [LICENSE](./LICENSE).
 Only dependency: the [`mcp`](https://pypi.org/project/mcp/) SDK (MIT).
+
+
+## Support this work
+
+Built by one disabled founder, solo. If this saves you tokens or time, [chip in what it's worth to you](https://buy.stripe.com/7sY7sN2JectC2TmeeV1VK05) — it keeps the servers on and the work open.
