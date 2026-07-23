@@ -1,10 +1,14 @@
 # humane-intelligence-mcp
+<!-- mcp-name: io.github.sammyboi81/humane-intelligence -->
 
 ```bash
 python -m venv .venv && .venv/bin/pip install mcp
 
 # wire it into your AI (Claude Code shown; works with any MCP client)
 claude mcp add humane -- .venv/bin/python server.py
+
+# Codex
+codex mcp add humane -- .venv/bin/python server.py
 ```
 
 **Governed, tamper-evident memory for any AI — free and open.**
